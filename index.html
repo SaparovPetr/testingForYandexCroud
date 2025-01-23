@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Ларек</title>
+		<link rel="icon" href=" ./images/favicon.ico" sizes="any" />
+		<link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="./images/mobile-icon.png" />
+		<link rel="stylesheet" href="/styles/reset.css" />
+		<link rel="stylesheet" href="/styles/style.css" />
+	</head>
+
+	<body>
+		<section class="shelves">
+			<h2 class="visually-hidden">Прилавок с товарами</h2>
+			<ul class="shelves__level shelves__level_first">
+				<li class="shelves__item-wrapper">
+					<img id="vine" src="./images/vine.svg" alt="бутылка вина" />
+				</li>
+
+				<li class="shelves__item-wrapper">
+					<img id="milk" src="./images/milk.svg" alt="бутылка молока" />
+				</li>
+
+				<li class="shelves__item-wrapper">
+					<img id="jem" src="./images/jem.svg" alt="банка варенья" />
+				</li>
+
+				<li class="shelves__item-wrapper">
+					<img id="cheese" src="./images/cheese.svg" alt="сыр" />
+				</li>
+			</ul>
+
+			<ul class="shelves__level shelves__level_second">
+				<li class="shelves__item-wrapper">
+					<img id="meet" src="./images/meet.svg" alt="мясо" />
+				</li>
+
+				<li class="shelves__item-wrapper">
+					<img src="./images/chiken.svg" alt="курица" id="chiken" />
+				</li>
+
+				<li class="shelves__item-wrapper">
+					<img id="pack" src="./images/package.svg" alt="пачка чипсов" />
+				</li>
+			</ul>
+
+			<ul class="shelves__level shelves__level_third">
+				<li class="shelves__item-wrapper">
+					<img id="pineapple" src="./images/pineapple.svg" alt="анананс" />
+				</li>
+
+				<li class="shelves__item-wrapper">
+					<img id="banana" src="./images/banana.svg" alt="бананы" />
+				</li>
+
+				<li class="shelves__item-wrapper">
+					<img id="apple" src="./images/apple.svg" alt="яблоко" />
+				</li>
+
+				<li class="shelves__item-wrapper">
+					<img id="lattice" src="./images/lattice.svg" alt="салат" />
+				</li>
+			</ul>
+		</section>
+
+		<section class="cart-wrapper">
+			<h2 class="visually-hidden">Корзина с покупками</h2>
+			<div class="cart"></div>
+		</section>
+
+		<template id="payment-template">
+			<form class="payment" name="form" action="https://lavka.yandex.ru/">
+				<button class="payment__button" type="submit">Оплатить корзину</button>
+			</form>
+		</template>
+
+		<script src="script.js"></script>
+	</body>
+</html>
