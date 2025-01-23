@@ -1,9 +1,68 @@
+:root {  
+  --body-padding-top: 20px;
+  --body-padding-right: 230px;
+  --body-padding-bottom: 20px;
+  --body-padding-left: 230px;
+  --shelves-inline-size: 325px;
+  --shelves-block-size: 650px;
+  --shelves__level_first-block-size: 184px;
+  --vine-wrapper-inset-inline-start: -10px;
+  --milk-wrapper-inset-inline-start: -3px;
+  --jem-wrapper-inset-block-start: -18px;
+  --jem-wrapper-inset-inline-start: 2px;
+  --cheese-wrapper-inset-block-start: 3px;
+  --cheese-wrapper-inset-inline-start: 20px;
+  --shelves__level_second-block-size: 149px;
+  --meet-wrapper-inset-block-start: 5px;
+  --meet-wrapper-inset-inline-start: -22px;
+  --chiken-wrapper-inset-inline-start: -23px;
+  --pack-wrapper-inset-block-start: -20px;
+  --pack-wrapper-inset-inline-start: 5px;
+  --shelves__level_third-block-size: 142px;
+  --pineapple-wrapper-inset-block-start: 10px;
+  --pineapple-wrapper-inset-inline-start: -10px;
+  --banana-wrapper-inset-block-start: -6px;
+  --banana-wrapper-inset-inline-start: -3px;
+  --apple-wrapper-inset-block-start: 17px;
+  --apple-wrapper-inset-inline-start: 5px;
+  --lattice-wrapper-inset-block-start: -20px;
+  --lattice-wrapper-inset-inline-start: 19px;
+  --cart-inset: -30px 38px;
+  --cart-inline-size: 183px;
+  --cart-block-size: 165px;
+  --cart-after-inset: -48px -80px;
+  --cart-after-inline-size: 11px;
+  --cart-after-block-size: 220px;
+  --cart-after-transform: scale(1.5);
+  --cart-img-inline-size: 80px;
+  --cart-img-margin-inline-start: -3px;
+  --cart-img-child-1-margin-left: 1px;
+  --cart-img-child-2-margin-left: -34px;
+  --cart-img-child-3-margin-left: 10px;
+  --cart-img-child-4-margin-left: -40px;
+  --cart-img-child-5-margin-left: -60px;
+  --cart-img-child-6-margin-left: -80px;
+  --cart-img-child-7-margin-left: -90px;
+  --cart-img-child-8-margin-left: -120px;
+  --cart-img-child-9-margin-left: -150px;
+  --payment__button-inset: -70px -22px;
+  --payment__button-inline-size: 258px;
+  --payment__button-block-size: 81px;
+  --payment__button-font-size: 23px;
+  --payment__button-border-radius: 25px;
+  --s: 1.5;
+}
+
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   inline-size: 100%;
-  padding: 20px 230px;
+  padding-top: var(--body-padding-top); ;
+  padding-right: var(--body-padding-right);
+  padding-bottom: var(--body-padding-bottom);
+  padding-left: var(--body-padding-left);
 }
 
 .shelves { 
@@ -11,8 +70,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  inline-size: 325px;
-  block-size: 650px;
+  inline-size: var(--shelves-inline-size);
+  block-size: var(--shelves-block-size);
   background-image: url("./../images/stall.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -41,152 +100,151 @@ body {
 
 .shelves__level_first {
   inline-size: 70%;
-  block-size: 184px;
+  block-size: var(--shelves__level_first-block-size);
 }
 
 #vine-wrapper {
   position:relative;
-  inset-inline-start: -10px;
+  inset-inline-start: var(--vine-wrapper-inset-inline-start);
 }
 
 #milk-wrapper {
   position:relative;
-  inset-inline-start: -3px;
+  inset-inline-start: var(--milk-wrapper-inset-inline-start);
 }
 
 #jem-wrapper {
   position:relative;
-  inset-block-start: -18px;
-  inset-inline-start: 2px;
+  inset-block-start: var(--jem-wrapper-inset-block-start);
+  inset-inline-start: var(--jem-wrapper-inset-inline-start);
   transform: scale(1.2);
 }
 
 #cheese-wrapper {
   position:relative;
-  inset-block-start: 3px;
-  inset-inline-start: 20px;
+  inset-block-start: var(--cheese-wrapper-inset-block-start);
+  inset-inline-start: var(--cheese-wrapper-inset-inline-start);
 }
 
 .shelves__level_second {
-  inline-size: 80%;
-  block-size: 149px;
+  inline-size: 80%;    
+  block-size: var(--shelves__level_second-block-size);
 }
 
 #meet-wrapper {
   position:relative;
-  inset-block-start: 5px;
-  inset-inline-start: -22px;
+  inset-block-start: var(--meet-wrapper-inset-block-start);
+  inset-inline-start: var(--meet-wrapper-inset-inline-start);
   transform: scale(0.95);
 }
 
 #chiken-wrapper {
   position:relative;
-  inset-block-start: 6px;
-  inset-inline-start: -23px;
+  inset-inline-start: var(--chiken-wrapper-inset-inline-start);
   transform: scale(1.1);
 }
 
 #pack-wrapper {
   position:relative;
-  inset-block-start: -20px;
-  inset-inline-start: 5px;
+  inset-block-start: var(--pack-wrapper-inset-block-start);
+  inset-inline-start: var(--pack-wrapper-inset-inline-start);
   transform: scale(1.3);
 }
 
 .shelves__level_third {
   inline-size: 84%;
-  block-size: 142px;
+  block-size: var(--shelves__level_third-block-size);
 }
 
 #pineapple-wrapper {
   position:relative;
-  inset-block-start: 10px;
-  inset-inline-start: -10px;
+  inset-block-start: var(--pineapple-wrapper-inset-block-start);
+  inset-inline-start: var(--pineapple-wrapper-inset-inline-start);
   transform: scale(0.8);
 }
 
 #banana-wrapper {
   position:relative;
-  inset-block-start: -6px;
-  inset-inline-start: -3px;
+  inset-block-start: var(--banana-wrapper-inset-block-start);
+  inset-inline-start:var(--banana-wrapper-inset-inline-start);
 }
 
 #apple-wrapper {
   position:relative;
-  inset-block-start: 17px;
-  inset-inline-start: 5px;
+  inset-block-start: var(--apple-wrapper-inset-block-start);
+  inset-inline-start: var(--apple-wrapper-inset-inline-start);
   transform: scale(0.7);
 }
 
 #lattice-wrapper {
   position:relative;
-  inset-block-start: -20px;
-  inset-inline-start: 19px;
+  inset-block-start: var(--lattice-wrapper-inset-block-start);
+  inset-inline-start: var(--lattice-wrapper-inset-inline-start);
   transform: scale(1.3);
 }
 
 .cart {
   position: relative;
-  inset: -30px 38px;
+  inset: -30px var(--cart-inset);
   z-index: 2;
   display: flex;
   align-items: end;
-  inline-size: 279px;
-  block-size: 161px;
+  inline-size: var(--cart-inline-size);
+  block-size: var(--cart-block-size);
 }
 
 .cart::after {
   content: url("./../images/cart.svg");
   position: absolute;
-  inset: -47px -35px;
-  inline-size: 277px;
-  block-size: 229px;  
-  transform: scale(1.5);
+  inset: var(--cart-after-inset);
+  inline-size: var(--cart-after-inline-size);
+  block-size: var(--cart-after-block-size);
+  transform: var(--cart-after-transform);
 }
 
 .cart img {
   z-index: 0;
-  inline-size: 80px;
-  margin-inline-start: -3px;
+  inline-size: var(--cart-img-inline-size);
+  margin-inline-start: var(--cart-img-margin-inline-start);
   animation: shake 0.5s;
 }
 
 .cart img:nth-child(1) {
-  margin-left: 1px;
+  margin-left: var(--cart-img-child-1-margin-left);
 }
 
 .cart img:nth-child(2) {
-  margin-left: -34px;
+  margin-left: var(--cart-img-child-2-margin-left);
   rotate: -3deg;
 }
 
 .cart img:nth-child(3) {
-  margin-left: 10px;
+  margin-left: var(--cart-img-child-3-margin-left);
   rotate: 7deg;
 }
 
 .cart img:nth-child(4) {
-  margin-left: -40px;
+  margin-left: var(--cart-img-child-4-margin-left);
 }
 
 .cart img:nth-child(5) {
-  margin-left: -60px;
+  margin-left: var(--cart-img-child-5-margin-left);
 }
 
 .cart img:nth-child(6) {
-  margin-left: -80px;
+  margin-left: var(--cart-img-child-6-margin-left);
 }
 
 .cart img:nth-child(7) {
-  margin-left: -90px;
+  margin-left: var(--cart-img-child-7-margin-left);
 }
 
 .cart img:nth-child(8) {
-  margin-left: -120px;
+  margin-left: var(--cart-img-child-8-margin-left);
 }
 
 .cart img:nth-child(9) {
-  margin-left: -150px;
+  margin-left: var(--cart-img-child-9-margin-left);
 }
 
 .payment {
@@ -197,26 +255,30 @@ body {
 
 .payment__button {
   position: absolute;
-  inset: -65px 14px;
+  inset: var(--payment__button-inset);
   z-index: 5;
-  inline-size: 258px;
-  block-size: 81px;
+  inline-size: var(--payment__button-inline-size);
+  block-size: var(--payment__button-block-size);
   font-weight: bold;
-  font-size: 23px;
+  font-size: var(--payment__button-font-size);
   font-family: Arial, Helvetica, sans-serif;
-  user-select: none;
   -webkit-tap-highlight-color: transparent;
   background-color: #FCE000;
   border: none;
-  border-radius: 25px;
+  border-radius: var(--payment__button-border-radius);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   animation: pulsation 1.5s ease-out infinite;
 }
 
+@supports (user-select: none) {
+	.payment__button  {
+		user-select: none;
+	}
+}
+
 .payment__button:hover {
   background-color: rgb(219, 175, 27);
-  text-shadow: -1px 0 #ece2e2, 0 1px #797373;
   transition: all 0.3s ease-in-out;
 }
 
@@ -251,3 +313,59 @@ body {
     opacity: 1;
   }
 }
+
+@media (width <=375px) {
+  :root {  
+    --body-padding-top: calc(20px/var(--s));
+    --body-padding-right: calc(230px/var(--s));
+    --body-padding-bottom: calc(20px/var(--s));
+    --body-padding-left: calc(230px/var(--s));
+    --shelves-inline-size: calc(325px/var(--s));
+    --shelves-block-size: calc(650px/var(--s));
+    --shelves__level_first-block-size: calc(184px/var(--s));
+    --vine-wrapper-inset-inline-start: calc(-10px/var(--s));
+    --milk-wrapper-inset-inline-start: calc(-3px/var(--s));
+    --jem-wrapper-inset-block-start: calc(-18px/var(--s));
+    --jem-wrapper-inset-inline-start: calc(2px/var(--s));
+    --cheese-wrapper-inset-block-start: calc(3px/var(--s));
+    --cheese-wrapper-inset-inline-start: calc(20px/var(--s));
+    --shelves__level_second-block-size: calc(149px/var(--s));
+    --meet-wrapper-inset-block-start: calc(5px/var(--s));
+    --meet-wrapper-inset-inline-start: calc(-22px/var(--s));
+    --chiken-wrapper-inset-inline-start: calc(-23px/var(--s));
+    --pack-wrapper-inset-block-start: calc(-20px/var(--s));
+    --pack-wrapper-inset-inline-start: calc(5px/var(--s));
+    --shelves__level_third-block-size: calc(142px/var(--s));
+    --pineapple-wrapper-inset-block-start: calc(10px/var(--s));
+    --pineapple-wrapper-inset-inline-start: calc(-10px/var(--s));
+    --banana-wrapper-inset-block-start: calc(-6px/var(--s));
+    --banana-wrapper-inset-inline-start: calc(-3px/var(--s));
+    --apple-wrapper-inset-block-start: calc(17px/var(--s));
+    --apple-wrapper-inset-inline-start: calc(5px/var(--s));
+    --lattice-wrapper-inset-block-start: calc(-20px/var(--s));
+    --lattice-wrapper-inset-inline-start: calc(19px/var(--s));
+    --cart-inset: calc(-30px/var(--s)) calc(38px/var(--s));
+    --cart-inline-size: calc(183px/var(--s));
+    --cart-block-size: calc(165px/var(--s));
+    --cart-after-transform: scale(calc(1.5/var(--s)));
+    --cart-after-inset: calc(-90px / var(--s)) calc(-95px / var(--s));
+    --cart-after-inline-size: calc(11px/var(--s));
+    --cart-after-block-size: calc(220px/var(--s));
+    --cart-img-inline-size: calc(80px/var(--s));
+    --cart-img-margin-inline-start: calc(-3px/var(--s));
+    --cart-img-child-1-margin-left: calc(1px/var(--s));
+    --cart-img-child-2-margin-left: calc(-34px/var(--s));
+    --cart-img-child-3-margin-left: calc(10px/var(--s));
+    --cart-img-child-4-margin-left: calc(-40px/var(--s));
+    --cart-img-child-5-margin-left: calc(-60px/var(--s));
+    --cart-img-child-6-margin-left: calc(-80px/var(--s));
+    --cart-img-child-7-margin-left: calc(-90px/var(--s));
+    --cart-img-child-8-margin-left: calc(-120px/var(--s));
+    --cart-img-child-9-margin-left: calc(-150px/var(--s));
+    --payment__button-inset: calc(-63px / var(--s)) calc(-33px / var(--s));
+    --payment__button-inline-size: calc(258px/var(--s));
+    --payment__button-block-size: calc(81px/var(--s));
+    --payment__button-font-size: calc(23px/var(--s));
+    --payment__button-border-radius: calc(25px/var(--s));
+  }
+} 
