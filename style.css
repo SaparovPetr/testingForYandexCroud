@@ -71,7 +71,7 @@ body {
   align-items: center;
   inline-size: var(--shelves-inline-size);
   block-size: var(--shelves-block-size);
-  background-image: url("./../images/stall.svg");
+  background-image: url("./images/stall.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -194,7 +194,7 @@ body {
 }
 
 .cart::after {
-  content: url("./../images/cart.svg");
+  content: url("./images/cart.svg");
   position: absolute;
   inset: var(--cart-after-inset);
   inline-size: var(--cart-after-inline-size);
