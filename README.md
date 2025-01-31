@@ -1,3 +1,5 @@
-# testingForYandexCroud
+Геймифицированный рекламный баннер с функциональностью Drag-and-drop на чистом JS.
 
-[Деплой](https://flourishing-gnome-725821.netlify.app/)
+Тестовое задание от Яндекс.Крауд.
+
+Деплой по [ссылке](https://saparovpetr.github.io/testingForYandexCroud/).
